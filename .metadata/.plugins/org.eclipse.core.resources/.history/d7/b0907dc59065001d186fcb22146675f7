@@ -1,0 +1,13 @@
+package com.nri;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ISpringCoreApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ISpringCoreApplication.class, args);
+	}
+
+}

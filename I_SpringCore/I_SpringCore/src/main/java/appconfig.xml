@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- property dependency injection works only when getter setter present -->
+	<bean id="oone" class="model.Order">
+		<property name="ordid">
+			<value>91</value>
+		</property>
+		<property name="ordname">
+			<value>Veg Pizza</value>
+		</property>
+	</bean>
+
+	<!-- Alternate way to write property dependency injection works only when 
+		getter setter present -->
+	<bean id="otwo" class="model.Order" p:ordid="92" p:ordname="Donut">
+	</bean>
+
+	<!-- Constructor dependency injection works even when getter setter not 
+		present but parameterized constructor needed -->
+	<bean id="othree" class="model.Order">
+		<constructor-arg value="93" type="int"></constructor-arg>
+		<constructor-arg value="Pasta" type="String"></constructor-arg>
+	</bean>
+
+	<bean id="cone" class="model.Customer">
+		<property name="cid">
+			<value>98</value>
+		</property>
+		<property name="cname">
+			<value>Manshi</value>
+		</property>
+		<property name="ccity">
+			<value>Kolkata</value>
+		</property>
+		<property name="order" ref="oone">
+		</property>
+	</bean>
+	
+	<bean id="ctwo" class="model.Customer" p:cid="92" p:cname="Mack"
+		p:ccity="Noida" p:order-ref="otwo">
+	</bean>
+	
+	<bean id="cthree" class="model.Customer">
+		<constructor-arg value="93" type="int"></constructor-arg>
+		<constructor-arg value="John" type="String"></constructor-arg>
+		<constructor-arg value="Mumbai" type="String"></constructor-arg>
+		<constructor-arg ref="othree"></constructor-arg>
+	</bean>
+
+</beans>
