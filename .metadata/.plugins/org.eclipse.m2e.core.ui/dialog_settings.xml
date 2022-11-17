@@ -17,4 +17,76 @@
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="D:\SpringTechStack\IV_SpringXMLAutowiring"/>
+			<item value="D:\SpringTechStack\III_SpringDIMap\src\main\java\appconfig.xml"/>
+			<item value="D:\SpringTechStack\I_SpringCore\I_SpringCore\src\main\java\com\nri\ISpringCoreApplication.java"/>
+			<item value="D:\SpringTechStack"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.nri"/>
+			<item value="com.nri.IV_SpringXMLAutowiring"/>
+		</list>
+		<list key="groupId">
+			<item value="com.nri"/>
+		</list>
+		<list key="artifactId">
+			<item value="V_SpringAOPApp"/>
+			<item value="IV_SpringXMLAutowiring"/>
+			<item value="III_SpringDIMap"/>
+			<item value="II_SpringDlCol"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
 </section>
