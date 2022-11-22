@@ -53,6 +53,8 @@
 			<item value="com.nri"/>
 		</list>
 		<list key="artifactId">
+			<item value="VII_SpringJDBC"/>
+			<item value="VI_SpringBeanLifeCycle"/>
 			<item value="V_SpringAOPApp"/>
 			<item value="IV_SpringXMLAutowiring"/>
 			<item value="III_SpringDIMap"/>
